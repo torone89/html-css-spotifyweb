@@ -193,6 +193,15 @@ footer {
         flex-direction: column;
     }
 
+
+    /* MAIN */
+    .title-selection {
+
+        width: calc(100% / 3);
+        justify-content: space-between;
+
+    }
+
 }
 
 
