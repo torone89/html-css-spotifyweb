@@ -92,6 +92,15 @@ aside {
     background-color: red;
     height: 100%;
     width: 100%;
+    display: flex;
+
+    flex-direction: column;
+}
+
+i {
+    font-size: 50px;
+    padding: 1rem;
+
 }
 
 .icon-down {
@@ -99,7 +108,15 @@ aside {
     background-color: yellow;
     height: 100%;
     width: 100%;
+    display: flex;
+
+    flex-direction: column;
 }
+
+.icon-up-tablet {
+    display: none;
+}
+
 
 /* *************************/
 /* Main */
@@ -142,9 +159,22 @@ footer {
         left: 300px;
     }
 
+    /* ASSIDE */
     aside {
         width: 300px;
     }
+
+    .icon-up-smart {
+        display: none
+    }
+
+    .icon-up-tablet {
+
+
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 
