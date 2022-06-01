@@ -151,6 +151,38 @@ main {
     height: 200px;
 }
 
+
+/* SELECTION BOX RECENTLY.... */
+
+.row-box {
+    display: flex;
+}
+
+
+.box {
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column
+}
+
+.box-img {
+    flex-basis: 80%;
+    background-color: blue;
+}
+
+
+.box-content {
+    flex-basis: 20%;
+}
+
+
+
+
+
+
 /* *************************/
 /* Footer */
 /* *************************/
@@ -165,6 +197,17 @@ footer {
     border: 1px dashed yellow;
     z-index: 1;
 }
+
+
+
+
+/* *************
+**********************
+RESPONSE 
+********************
+**********
+ */
+
 
 /* TABLET */
 @media screen and (min-width: 576px) {
