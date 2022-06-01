@@ -22,7 +22,7 @@ Header: #080a11
 
 .container-upper {
 
-    background-color: aqua;
+
     height: 1400px;
     border: 2px solid green;
 
@@ -38,14 +38,10 @@ body {
     overflow: hidden;
 
 
-}
-
-main {
-    height: 80vh;
-    overflow-y: scroll;
-    background-color: bisque;
 
 }
+
+
 
 /* *************************/
 /* Utilities */
@@ -54,7 +50,8 @@ main {
 /* *************************/
 /* Header */
 header {
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background-color: #080a11;
     position: fixed;
     left: 100px;
     right: 0;
@@ -71,19 +68,54 @@ header {
 /* ASIDE */
 /* *************************/
 aside {
-    height: 100%;
+    height: calc(100vh - 100px);
     width: 100px;
     float: left;
     background-color: black;
+    position: relative;
+    left: 0;
+    top: 0
+}
 
-    border: 1px dashed red;
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+
+}
+
+.icon-up {
+    flex-basis: 80%;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-down {
+    flex-basis: 20%;
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
 }
 
 /* *************************/
 /* Main */
 /* *************************/
 
+.content-main {
+    height: calc(100vh - 100px);
 
+}
+
+main {
+
+    overflow-y: auto;
+    background-color: bisque;
+
+}
 
 /* *************************/
 /* Footer */
