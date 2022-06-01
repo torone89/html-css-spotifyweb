@@ -1,0 +1,32 @@
+/* Color */
+
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Generic */
+
+.container {
+    max-width: 1200px;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Utilities */
+
+/* Header */
+
+
+/* Main */
+
+
+
+
+/* Footer */

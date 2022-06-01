@@ -1,0 +1,13 @@
+/* TABLET */
+@media screen and (min-width: 768px) {}
+
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px) {}
+
+
+/* LARGE DESKTOP */
+
+@media screen and (min-width: 1140px) {}
