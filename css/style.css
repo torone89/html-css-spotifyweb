@@ -1,4 +1,11 @@
-/* Color */
+/* *************************/
+/* Color 
+Footer: #272727
+Main: #141921
+Header: #080a11
+
+*/
+/* *************************/
 
 
 /* Reset */
@@ -8,25 +15,113 @@
     padding: 0;
 }
 
+/* *************************/
 /* Generic */
+/* *************************/
 
-.container {
-    max-width: 1200px;
+
+.container-upper {
+
+    background-color: aqua;
+    height: 1400px;
+    border: 2px solid green;
+
+    padding-top: 100px;
+
 
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 100px;
+    background-color: black;
+    overflow: hidden;
+
+
 }
 
+main {
+    height: 80vh;
+    overflow-y: scroll;
+    background-color: bisque;
+
+}
+
+/* *************************/
 /* Utilities */
+/* *************************/
 
+/* *************************/
 /* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 100px;
+    right: 0;
+    top: 0;
+    height: 100px;
+    color: white;
+    border: 1px dashed yellow;
+    z-index: 1;
+}
 
+/* *************************/
 
+/* *************************/
+/* ASIDE */
+/* *************************/
+aside {
+    height: 100%;
+    width: 100px;
+    float: left;
+    background-color: black;
+
+    border: 1px dashed red;
+}
+
+/* *************************/
 /* Main */
+/* *************************/
 
 
 
-
+/* *************************/
 /* Footer */
+/* *************************/
+
+footer {
+    background-color: #272727;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px dashed yellow;
+}
+
+/* TABLET */
+@media screen and (min-width: 576px) {
+
+
+    /* *******************
+    LAYOUT
+    ******************** */
+    header {
+        left: 300px;
+    }
+
+    aside {
+        width: 300px;
+    }
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 768px) {}
+
+
+
+/* LARGE DESKTOP */
+
+@media screen and (min-width: 992px) {}
