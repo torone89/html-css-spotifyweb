@@ -212,10 +212,13 @@ footer {
     flex-basis: (100% / 3 - 2rem);
     background-color: aqua;
     border: 1px green dashed;
-    height: 100px;
-    width: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+
 }
 
 .playlist-middle {
@@ -231,12 +234,12 @@ footer {
     flex-basis: (100% / 3 - 2rem);
     background-color: aqua;
     border: 1px green dashed;
-    height: 100px;
-    width: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
     display: flex;
     align-items: center;
+    height: 100px;
+    width: 100%;
 }
 
 
@@ -302,6 +305,42 @@ footer {
 
     font-size: 0.7rem;
 
+}
+
+/* PLAY LIST-LEFT */
+
+.playlist-copertina img {
+
+    height: 80px;
+    width: 80px;
+}
+
+.playlist-copertina {
+    flex-basis: 80%;
+    display: flex;
+
+
+}
+
+.prova {
+    flex-basis: 20%;
+
+}
+
+.figure-content {
+    flex-basis: 90%;
+    margin-left: 1rem;
+}
+
+
+
+.playlist-copertina-icon {
+    flex-basis: 20%;
+
+}
+
+.playlist-left .playlist-copertina-icon i {
+    padding: 0;
 }
 
 /* *************
