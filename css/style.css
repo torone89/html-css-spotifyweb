@@ -103,22 +103,41 @@ header {
 
 .row-box {
     display: flex;
-    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+
 }
 
 
 
 .box {
     background-color: aquamarine;
-
+    flex-basis: 50%;
     border: 1px solid black;
-    display: flex;
-    flex-direction: column
+    text-align: center;
+
+
 }
 
-.img-copertine {
-    width: 100%;
+.text-title-box {
+    color: white;
+    font-size: 1rem;
+    padding: .6rem;
 }
+
+
+.text-brano-box {
+
+    color: lightgrey;
+    font-size: .8rem
+}
+
+
+.img-copertine {}
+
+
+
+
 
 .box-img {
     flex-basis: 80%;
@@ -181,6 +200,7 @@ header {
     align-items: center;
     height: 100px;
     width: 100%;
+    justify-content: flex-end;
 }
 
 
@@ -260,7 +280,6 @@ header {
 .playlist-copertina {
     flex-basis: 80%;
     display: flex;
-
 
 }
 
