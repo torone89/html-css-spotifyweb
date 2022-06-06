@@ -1,6 +1,10 @@
 /* Color */
 
-/* Footer #272727 */
+/* Footer #272727
+Main #141921 */
+
+
+
 /* Reset */
 * {
     box-sizing: border-box;
@@ -10,14 +14,10 @@
 
 /* Generic */
 
-.container {
-    max-width: 1200px;
 
-}
 
 .upper-container {
     height: calc(100vh - 100px);
-    background-color: aqua;
     position: relative;
 
 }
@@ -33,15 +33,15 @@ footer {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 100px;
+    width: 70px;
     background-color: yellow;
     z-index: 1;
 }
 
 main {
     height: 100%;
-    margin-left: 100px;
-    background-color: brown;
+    margin-left: 70px;
+    background-color: #141921;
     overflow-y: auto;
     padding-top: 100px;
 }
@@ -55,7 +55,24 @@ header {
     left: 0;
 }
 
+#recently-played {
+    margin: 10px;
+}
+
+h1 {
+    color: white;
+
+}
+
 /* Utilities */
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
 
 /* Header */
 
@@ -90,7 +107,7 @@ header {
 .selection-menu li {
     list-style-type: none;
     display: inline-block;
-    padding: 5px 2px 20px;
+    padding: 5px 2px 10px;
 }
 
 .selection-menu a {
@@ -99,22 +116,24 @@ header {
 }
 
 
-/* SELECTION BOX RECENTLY.... */
+/* SECTION BOX */
 
 .row-box {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 
+
 }
 
 
 
 .box {
-    background-color: aquamarine;
-    width: calc(100% / 2);
-    border: 1px solid black;
+
+    width: calc(100% / 2 - 10px);
     text-align: center;
+    margin-bottom: 1rem;
+    padding: 10px;
 
 
 }
@@ -138,12 +157,8 @@ header {
 }
 
 
-
-
-
 .box-img {
     flex-basis: 80%;
-    background-color: blue;
 }
 
 
@@ -152,7 +167,21 @@ header {
 }
 
 
+/* BOX ALTERNATIVE  */
+.box-alternative {
 
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.img-copertine-alternative img {
+
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+
+    object-fit: cover;
+}
 
 /* *************************/
 /* Footer */
@@ -336,12 +365,18 @@ header {
 
 
     .side-bar {
-        width: 250px;
+        width: 200px;
     }
 
+
+    /* +++++++++ */
+    /* MAIN */
+    /* +++++++++ */
+
     main {
-        margin-left: 250px;
+        margin-left: 200px;
     }
+
 
 
 }
@@ -355,10 +390,26 @@ header {
 
 /* DESKTOP */
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .box {
+
+        width: calc(100% / 4)
+    }
+}
 
 
 
 /* LARGE DESKTOP */
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+
+    .selection-menu li {
+
+        padding: 5px 20px 10px;
+    }
+
+    .box {
+
+        width: calc(100% / 6)
+    }
+}
