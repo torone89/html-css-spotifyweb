@@ -23,17 +23,18 @@ Header: #080a11
 .container-upper {
 
 
-    height: 1400px;
+    height: calc(100vh - 100px);
     border: 2px solid green;
 
     padding-top: 100px;
+    position: relative;
 
 
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 100px;
+
     background-color: black;
     overflow: hidden;
 
@@ -59,7 +60,7 @@ header {
     height: 100px;
     color: white;
     border: 1px dashed yellow;
-    z-index: 2;
+
 }
 
 /* *************************/
@@ -68,14 +69,16 @@ header {
 /* ASIDE */
 /* *************************/
 aside {
-    height: calc(100vh - 100px);
-    width: 100px;
-    float: left;
-    background-color: black;
 
+    width: 100px;
+    height: 100%;
+
+    background-color: black;
+    position: absolute;
     left: 0;
     top: 0;
     border: green 2px solid;
+    z-index: 1;
 }
 
 
@@ -129,8 +132,10 @@ i {
 
 main {
 
-    overflow-y: auto;
+    height: 100%;
+    margin-left: 100px;
     background-color: bisque;
+    overflow: auto;
 
 }
 
@@ -190,12 +195,7 @@ main {
 footer {
     background-color: #272727;
     height: 100px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
     border: 1px dashed yellow;
-    z-index: 0;
 }
 
 
@@ -203,7 +203,7 @@ footer {
 
     display: flex;
     justify-content: space-between;
-    flex-shrink: initial;
+    flex-shrink: 0;
 
 }
 
@@ -285,7 +285,7 @@ footer {
 
 .progress-alternative {
 
-    width: 50%;
+    width: 40%;
 }
 
 
@@ -311,8 +311,8 @@ footer {
 
 .playlist-copertina img {
 
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
 }
 
 .playlist-copertina {
@@ -329,7 +329,7 @@ footer {
 
 .figure-content {
     flex-basis: 90%;
-    margin-left: 1rem;
+    margin-left: 0.2rem;
 }
 
 
@@ -358,13 +358,25 @@ RESPONSE
     /* *******************
     LAYOUT
     ******************** */
+
+    .container-upper {
+
+
+        height: calc(100vh - 300px);
+
+    }
+
     header {
-        left: 300px;
+        left: 300px
     }
 
     /* ASSIDE */
     aside {
         width: 300px;
+    }
+
+    main {
+        margin-left: 300px;
     }
 
     .icon-up-smart {
