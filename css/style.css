@@ -211,7 +211,7 @@ header {
 
 .progress-bar {
     height: 3px;
-    background-color: lightgray;
+    background-color: gray;
     display: inline-block;
 
 }
@@ -231,10 +231,11 @@ header {
 
 }
 
-.progress-bar .progress {
+.progress {
     background-color: white;
-    height: 40%;
+    width: 40%;
     border-radius: 0 5px 5px 0;
+    display: inline-block;
 }
 
 .progress-container .text-progress {
@@ -277,7 +278,7 @@ header {
 }
 
 #playlist .playlist-left .playlist-copertina-icon i {
-    padding: 0;
+    padding: 1rem 0.3rem;
 }
 
 
@@ -314,7 +315,7 @@ header {
         width: 250px;
     }
 
-    .main {
+    main {
         margin-left: 250px;
     }
 
