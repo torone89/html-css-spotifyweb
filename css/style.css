@@ -1,6 +1,6 @@
 /* Color */
 
-
+/* Footer #272727 */
 /* Reset */
 * {
     box-sizing: border-box;
@@ -24,7 +24,7 @@
 
 footer {
     height: 100px;
-    background-color: black;
+    background-color: #272727
 }
 
 
@@ -103,8 +103,8 @@ header {
 
 .row-box {
     display: flex;
-    height: 100%;
     width: 100%;
+    flex-wrap: wrap;
 
 }
 
@@ -112,7 +112,7 @@ header {
 
 .box {
     background-color: aquamarine;
-    flex-basis: 50%;
+    width: calc(100% / 2);
     border: 1px solid black;
     text-align: center;
 
@@ -133,7 +133,9 @@ header {
 }
 
 
-.img-copertine {}
+.img-copertine img {
+    width: 100%;
+}
 
 
 
@@ -170,8 +172,7 @@ header {
 
 .playlist-left {
     flex-basis: (100% / 3 - 2rem);
-    background-color: aqua;
-    border: 1px green dashed;
+
     margin-left: 1rem;
     margin-right: 1rem;
     display: flex;
@@ -183,8 +184,8 @@ header {
 
 .playlist-middle {
     flex-basis: (100% / 3 - 2rem);
-    background-color: aqua;
-    border: 1px green dashed;
+
+
     height: 100px;
     width: 100%;
 
@@ -192,8 +193,8 @@ header {
 
 .playlist-right {
     flex-basis: (100% / 3 - 2rem);
-    background-color: aqua;
-    border: 1px green dashed;
+
+
     margin-left: 1rem;
     margin-right: 1rem;
     display: flex;
@@ -348,13 +349,7 @@ header {
 
 
 /* MAIN */
-.title-selection {
 
-    width: calc(100% / 3);
-    justify-content: space-between;
-
-
-}
 
 
 
