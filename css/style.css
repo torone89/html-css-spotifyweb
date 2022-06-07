@@ -85,14 +85,58 @@ h1 {
 
 /* navbar */
 
-.side-bar img {
-    width: 50px;
-    height: 50px;
+.side-bar {
+    padding: 0.5rem;
+    background-color: black
 }
 
 
+.icone-superiori {
+    height: calc(100% - 90px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
 
+.icone-inferiori {
+    height: 90px;
+    background-color: blue;
+}
 
+.play-list-menu {
+    overflow-y: auto;
+}
+
+.side-bar li {
+    padding: 0.3rem
+}
+
+.logo img {
+    width: 100%;
+}
+
+.side-bar img {
+    width: 30px;
+    height: 30px;
+}
+
+.logo-big img {
+    width: 100%;
+    margin-left: -40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.plus {
+    width: 50px;
+    height: 50px;
+    background-color: #272727;
+}
+
+.add-playlist i {
+    font-size: 20px;
+    color: white;
+}
 
 /* SELECTION MENU- */
 
