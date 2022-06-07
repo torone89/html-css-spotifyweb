@@ -20,11 +20,12 @@ Main #141921 */
     height: calc(100vh - 100px);
     position: relative;
 
+
 }
 
 footer {
     height: 100px;
-    background-color: #272727
+    background-color: #272727;
 }
 
 
@@ -47,7 +48,7 @@ main {
 }
 
 header {
-    background-color: green;
+    background-color: #080a11;
     position: fixed;
     height: 80px;
     top: 0;
@@ -103,6 +104,30 @@ hr {
 /* Header */
 
 
+.btn {
+    background-color: transparent;
+    padding: 0.6rem 1.6rem;
+    border: 1px white solid;
+    color: white;
+    margin-right: 10px;
+    border-radius: 30px;
+
+
+
+}
+
+.flex-position a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.flex-position {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+
+}
 
 /* *************************/
 /* Main */
