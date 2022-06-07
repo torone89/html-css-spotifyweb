@@ -479,8 +479,39 @@ hr {
 }
 
 
+/* EFFECTS */
 
+.box-img:hover figure {
+    transform: translatey(-10px) scale(1.0);
+    cursor: pointer;
 
+}
+
+.box-img {
+    transition: transform 0.3;
+    position: relative;
+}
+
+.box .box-img:hover figure::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box .box-img:hover figure::after {
+    content: '\f144';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-family: 'Font Awesome 6 Free';
+}
 
 
 
