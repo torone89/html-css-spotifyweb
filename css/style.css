@@ -14,7 +14,10 @@ Main #141921 */
 
 /* Generic */
 
-
+body {
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
 
 .upper-container {
     height: calc(100vh - 100px);
@@ -110,8 +113,6 @@ hr {
 .m-auto {
     margin: 0 auto;
 }
-
-
 
 
 /* Header */
@@ -247,6 +248,13 @@ hr {
 
 }
 
+.text-title-box-play {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
 .main-menu-smartphone li {
     text-align: center;
 }
@@ -254,6 +262,7 @@ hr {
 .i-bottom-smartphone li {
     text-align: center;
 }
+
 
 
 /* SELECTION MENU- */
@@ -532,7 +541,7 @@ hr {
 
 .icone-superiori figure:hover img {
     border-left: 3px green solid;
-    color: white;
+    opacity: 1;
 
 }
 
