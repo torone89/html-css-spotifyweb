@@ -26,6 +26,7 @@ Main #141921 */
 footer {
     height: 100px;
     background-color: #272727;
+    flex-shrink: 0;
 }
 
 
@@ -54,6 +55,10 @@ header {
     top: 0;
     right: 0;
     left: 0;
+    margin-left: 70px;
+    z-index: 1;
+
+
 }
 
 #recently-played {
@@ -66,10 +71,14 @@ h1 {
 }
 
 hr {
-    margin: 0.2 0;
+    margin: 0 0;
 }
 
 /* Utilities */
+
+.mt-10 {
+    margin-top: 10Px;
+}
 
 .mt-20 {
     margin-top: 20px;
@@ -77,6 +86,10 @@ hr {
 
 .mb-20 {
     margin-bottom: 20px;
+}
+
+.mr-10 {
+    margin-right: 10px
 }
 
 .d-inline {
@@ -89,14 +102,14 @@ hr {
 
 .d-flex-center {
     display: flex;
-    justify-content: center;
+    align-items: center;
+
 
 }
 
 .m-auto {
     margin: 0 auto;
 }
-
 
 
 
@@ -151,15 +164,28 @@ hr {
 
 .icone-inferiori {
     height: 90px;
-    background-color: blue;
+
 }
 
 .play-list-menu {
     overflow-y: auto;
+    color: white;
+}
+
+.side-bar a {
+    text-decoration: none;
+    opacity: 0.4;
+    color: white;
+
+}
+
+.icone-superiori nav:hover a {
+    color: white;
+
 }
 
 .side-bar li {
-    padding: 0.5rem 0;
+    padding: 0.4rem 0;
 }
 
 .logo img {
@@ -191,12 +217,14 @@ hr {
 
 .plus-round {
     border-radius: 50%;
-
+    margin-top: 4px
 }
 
+
+
 .fix-profile img {
-    width: 100%;
-    height: 100%;
+    width: 89%;
+    margin-top: 6px;
     border-radius: 50%;
     overflow: hidden;
     object-fit: cover
@@ -242,7 +270,10 @@ hr {
     list-style-type: none;
     display: inline-block;
     padding: 5px 2px 10px;
+    opacity: 0.6;
+    transition: color 0.2;
 }
+
 
 .selection-menu a {
     text-decoration: none;
@@ -282,7 +313,8 @@ hr {
 .text-brano-box {
 
     color: lightgrey;
-    font-size: .8rem
+    font-size: .8rem;
+    opacity: 0.6;
 }
 
 
@@ -303,7 +335,7 @@ hr {
 
 /* BOX ALTERNATIVE  */
 .box-alternative {
-
+    width: 30%;
     border-radius: 50%;
     padding: 10px;
 }
@@ -316,6 +348,15 @@ hr {
 
     object-fit: cover;
 }
+
+
+.row-box-alternative {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
 
 /* *************************/
 /* Footer */
@@ -478,9 +519,25 @@ hr {
     font-size: 10px;
 }
 
-
+/* ******************* */
 /* EFFECTS */
+/* ******************* */
 
+/* NAV_MAIN */
+.selection-menu li:hover a {
+    border-bottom: 3px green solid;
+    color: white;
+
+}
+
+.icone-superiori figure:hover img {
+    border-left: 3px green solid;
+    color: white;
+
+}
+
+
+/* BOX MAIN */
 .box-img:hover figure {
     transform: translatey(-10px) scale(1.0);
     cursor: pointer;
@@ -490,6 +547,8 @@ hr {
 .box-img {
     transition: transform 0.3;
     position: relative;
+    z-index: 0;
+
 }
 
 .box .box-img:hover figure::before {
@@ -500,6 +559,7 @@ hr {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
 .box .box-img:hover figure::after {
@@ -511,6 +571,7 @@ hr {
     color: white;
     font-size: 40px;
     font-family: 'Font Awesome 6 Free';
+    z-index: 0;
 }
 
 
@@ -537,6 +598,9 @@ hr {
     /* +++++++++ */
     /* MAIN */
     /* +++++++++ */
+    header {
+        margin-left: 200px;
+    }
 
     main {
         margin-left: 200px;
@@ -570,7 +634,13 @@ hr {
         width: calc(100% / 4)
     }
 
+    .playlist-player {
+        justify-content: center;
+    }
 
+    .playlist-player i {
+        margin-right: 1rem;
+    }
 }
 
 
